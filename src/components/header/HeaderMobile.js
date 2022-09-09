@@ -2,7 +2,7 @@
 import React from 'react';
 
 // IMPORT STYLES AND ASSETS
-import '../styles/HeaderMobile.css'
+import '../../styles/header/HeaderMobile.css'
 
 
 const HeaderMobile = (props) => {

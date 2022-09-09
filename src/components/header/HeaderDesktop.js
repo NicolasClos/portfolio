@@ -2,7 +2,7 @@
 import React from 'react';
 
 // IMPORT STYLES AND ASSETS
-import '../styles/HeaderDesktop.css'
+import '../../styles/header/HeaderDesktop.css'
 
 
 const HeaderDesktop = (props) => {

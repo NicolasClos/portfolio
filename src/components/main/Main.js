@@ -2,8 +2,7 @@
 import React from 'react';
 
 // IMPORT STYLES AND ASSETS
-import '../styles/Main.css'
-
+import '../../styles/main/Main.css'
 
 const Main = (props) => {
     return(

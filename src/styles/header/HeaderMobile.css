@@ -1,6 +1,79 @@
 *{
-    font-family: sans-serif;
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.header{
+    width: 75%;
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 100;
+    font-weight: 500;
+}
+
+.bars{
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.tituloHeader{
+    flex-grow: 1;
+    box-shadow: 1px solid rgb(0, 0, 0);
+    color: rgb(57, 57, 95);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 40px
+}
+
+
+.headerDiv{
+    flex-grow: 4;
+}
+
+.headerUl{
+    display: flex;
+    flex-direction:column;
+    height: 100%;
+}
+
+.headerLi{
+    list-style: none;
+    flex-grow: 1;
+    border-bottom: 1px solid rgb(57, 57, 95);
+}
+
+.headerA{
+    color: rgb(57, 57, 95);
+    text-decoration: none;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.iconLi{
+    width: 20px;
+    height: 20px;
+}
+
+.headerA span:first-child{
+    border: 1px solid rgb(57, 57, 95);
+    border-radius: 100%;
+    padding:10px;
+    margin-right: 10px;
+}
+
+.headerLi:last-child{
+    border-bottom: none
 }

@@ -1,5 +1,6 @@
 // IMPORT COMPONENTS
 import React, {useState} from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 
 // IMPORT STYLES AND ASSETS
 import '../../styles/main/Contacto.css'
@@ -7,23 +8,101 @@ import '../../styles/main/Contacto.css'
 
 const Contacto = (props) => {
 
-    const [nombre, setNombre] = useState('');
-
-    return(
-            <section className='contactoContainer'>
-                <h3>Contacto</h3>
-                <form>
-                    <label htmlFor='nombre' >Nombre:</label>
-                    <input type='text' id='nombre' name='nombre' value={nombre} onChange={(e)=> setNombre(e.target.value)} />
-                    <label htmlFor='apellido'>Apellido:</label>
-                    <input type='text' id='apellido' name='apellido'/>
-                    <label htmlFor='email'>Email:</label>
-                    <input type='email' id='email' name='email' />
-                    <label htmlFor='mensaje'>Escriba su mensaje:</label>
-                    <textarea id='mensaje' name='mensaje' type='text'></textarea>
-                </form>
-            </section>
+const [state, handleSubmit] = useForm("xyyvkanb");
+if (state.succeeded) {
+    return (
+        <div className="contactoContainer">
+        <h3 className="contactoTitle">Contacto</h3>
+        <form method='POST' className='form' onSubmit={handleSubmit}>
+            <input
+                className="formName"
+                id="name"
+                type="text" 
+                name="name"
+                placeholder='Escriba su nombre'
+                required=' '
+            />
+            <ValidationError 
+                prefix="Name" 
+                field="name"
+                errors={state.errors}
+            />
+            <input
+                className="formEmail"
+                id="email"
+                type="email" 
+                name="email"
+                placeholder='Escriba su email'
+                required=' '
+            />
+            <ValidationError 
+                prefix="Email" 
+                field="email"
+                errors={state.errors}
+            />
+            <textarea
+                className="formMsg"
+                id="message"
+                name="message"
+                placeholder="Escriba su mensaje"
+            />
+            <ValidationError 
+                prefix="Message" 
+                field="message"
+                errors={state.errors}
+            />
+            <button className='formBtn' type="submit" disabled={state.submitting}>Enviar</button>
+    </form>
+    <p className="emailEnviado">Enviado!</p>
+</div>
     );
+}
+
+return (
+    <div className="contactoContainer">
+        <h3 className="contactoTitle">Contacto</h3>
+        <form method='POST' className='form' onSubmit={handleSubmit}>
+            <input
+                className="formName"
+                id="name"
+                type="text" 
+                name="name"
+                placeholder='Escriba su nombre'
+                required=' '
+            />
+            <ValidationError 
+                prefix="Name" 
+                field="name"
+                errors={state.errors}
+            />
+            <input
+                className="formEmail"
+                id="email"
+                type="email" 
+                name="email"
+                placeholder='Escriba su email'
+                required=' '
+            />
+            <ValidationError 
+                prefix="Email" 
+                field="email"
+                errors={state.errors}
+            />
+            <textarea
+                className="formMsg"
+                id="message"
+                name="message"
+                placeholder="Escriba su mensaje"
+            />
+            <ValidationError 
+                prefix="Message" 
+                field="message"
+                errors={state.errors}
+            />
+            <button className='formBtn' type="submit" disabled={state.submitting}>Enviar</button>
+    </form>
+</div>
+);
 }
 
 export default Contacto;

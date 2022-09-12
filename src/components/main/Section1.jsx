@@ -4,24 +4,21 @@ import imgHeader from '../../assets/header.jpg'
 import {BsChevronCompactDown} from 'react-icons/bs'
 
 // IMPORT STYLES AND ASSETS
-import '../../styles/main/Main.css'
+import '../../styles/main/Section1.css'
 
-const Main = (props) => {
+
+const Section1 = (props) => {
     return(
-        <main>
             <section className='sectionPrincipal'>
                 <div className='divImgPrincipal'>
-                    <img className='imgPrincipal' src={imgHeader}></img>
                     <div className='textoPrincipal'>
-                        <h1 className='tituloPrincipal'>NicolasClos</h1>
+                        <h1 className='tituloPrincipal'>NicolásClos</h1>
                         <h2 className='subtituloPrincipal'>Full Stack Developer</h2>
                     </div>
                 </div>
-                <BsChevronCompactDown className='iconPrincipal'/>
+                <BsChevronCompactDown className='iconDown'/>
             </section>
-        </main>
     );
-
 }
 
-export default Main;
+export default Section1;

@@ -14,7 +14,7 @@ const variants = {
         clipPath: 'circle(2000px at 30px 30px)' ,
     },
     closed:{
-        clipPath: 'circle(25px at 30px 30px)' ,
+        clipPath: 'circle(25px at 30px 30px)'
     }
 }
 
@@ -33,8 +33,11 @@ export default function HeaderMobile({funcion}){
                 <Boton 
                     toggle={changeState}
                 />
+                <div>
+                <h2 className="tituloHeader"> NicolásClos </h2>
+                <h3 className="subtituloHeader">Portfolio</h3>
+                </div>
                 
-                <h2 className="tituloHeader"> MI TIENDA </h2>
                 <div className='headerDiv'>
                     <ul className='headerUl'>
                         <li className='headerLi'><a className='headerA' href='#'><span><AiOutlineHome className='iconLi'/></span><span>Inicio</span></a></li>

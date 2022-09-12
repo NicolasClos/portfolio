@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+*{  
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+
+  .sectionPrincipal {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .divImgPrincipal{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 50;
+    background: #39395f;
+    background: linear-gradient(0deg, rgba(57,57,95,0.5) 25%, rgba(124,41,139,0.5) 100%), url(../../assets/header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+  .imgPrincipal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    object-fit: cover;
+  }
+
+  .textoPrincipal{
+    width: 90%;
+    margin: auto;
+  }
+
+  .tituloPrincipal{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    font-size: 280%;
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .subtituloPrincipal{
+    position: relative;
+    font-size: 120%;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .iconDown {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 40px;
+    display: inline-block;
+    z-index: 60;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }

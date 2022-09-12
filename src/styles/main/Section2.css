@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+*{  
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.presentacionContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.presentacionH3{
+    font-size: 30px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    color: #7c298b;
+    margin-top: 50px
+}
+
+.presentacionP{
+    color: rgb(57,57,95);
+    text-align: center;
+    padding: 30px 50px 0 50px;
+    font-size: 22px;
+    line-height: 50px;
+}
+
+/* WAVE SVG */
+
+.waveContainer{
+    margin-top: 50px;
+}
+
+.waveSvg{
+    position: absolute;
+    z-index: 1000;
+}
+
+.waveImgContainer{
+    width: 100%;
+    height: 800px;
+    background: #39395f;
+    background: linear-gradient(0deg, rgba(57,57,95,0.5) 25%, rgba(124,41,139,0.5) 100%), url(../../assets/main.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+    top: 20px;
+}
+
+/* DIV */
+
+.flexContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+    position: relative;
+    z-index: 200;
+    margin-top: -550px;
+    margin-bottom: 50px;
+    background: #fff;
+    
+}
+
+.flexItem{
+    flex-grow: 1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flexItem:last-child{
+    border-bottom: none
+}
+
+.flexItemIcon{
+    color: #7c298b;
+    font-size: 50px;
+}
+
+.flexItemTitle{
+    font-size: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    color: #39395f;
+    padding-bottom: 10px;
+}
+
+.flexItemDiv p{
+    font-size: 22px;
+    padding-bottom:40px;
+}
+
+.flexItemDivPTitle{
+    font-size: 24px!important;
+    padding: 10px!important;
+    color: #7c298b;
+}
+
+.flexItemDiv ul li{
+    list-style: none;
+    font-size: 22px;
+    padding: 5px;
+}

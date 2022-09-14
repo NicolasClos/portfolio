@@ -62,7 +62,7 @@ return (
     <div className="contactoContainer">
         <h3 className="contactoTitle">Contacto</h3>
         <form method='POST' className='form' onSubmit={handleSubmit}>
-            <input
+        <input
                 className="formName"
                 id="name"
                 type="text" 

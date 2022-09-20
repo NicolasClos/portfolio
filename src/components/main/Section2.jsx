@@ -8,7 +8,7 @@ import {IoServer} from "react-icons/io5"
 import '../../styles/main/Section2.css'
 import ImgMain from '../../assets/main.jpg'
 
-// ESTILOS
+// STYLES
 
 const pathStyle= {
     stroke: '#fff',
@@ -36,7 +36,7 @@ const Section2 = (props) => {
                     <div className="flexItemDiv">
                         <GiPencilRuler className='flexItemIcon' />
                         <h4 className='flexItemTitle'>Diseñador</h4>
-                        <p>Varloro las estructuras simples, con patrones de diseño simples e interacciones consideradas.</p>
+                        <p>Varloro las estructuras sencillas, con patrones de diseño simples e interacciones consideradas.</p>
                     </div>
                     <div className="flexItemDiv">
                         <p className='flexItemDivPTitle'>Cosas que me gustan diseñar:</p>
@@ -58,7 +58,7 @@ const Section2 = (props) => {
                     <div className="flexItemDiv">
                         <BsCodeSlash className='flexItemIcon' />
                         <h4 className='flexItemTitle'>FrontEnd Developer</h4>
-                        <p>Me gusta codificar cosas desde cerp, disfruto de traer ideas a la vida y plasmarlas al navegador.</p>
+                        <p>Me gusta codificar cosas desde cero, disfruto de traer ideas a la vida y plasmarlas al navegador.</p>
                     </div>
                     <div className="flexItemDiv">
                         <p className='flexItemDivPTitle'>Lenguajes que sé:</p>

@@ -24,7 +24,6 @@ export default function HeaderMobile({funcion}){
 
     const changeState = ()=>{
         setToggle(!toggle);
-        console.log("Se cambio el estado")
     }
 
     return(

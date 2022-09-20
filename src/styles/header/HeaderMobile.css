@@ -9,7 +9,7 @@
 
 .header{
     width: 60%;
-    background-color: rgba(30, 30, 30, 0.98);
+    background-color: rgba(18, 18, 18, 0.98);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,24 +21,25 @@
 .tituloHeader{
     flex-grow: 1;
     box-shadow: 1px solid #000000;
-    color: hsla(291, 54%, 35%, 1);
+    color: #fff;
     display: flex;
     align-items: center;
     padding-left: 20px;
     font-size: 220%;
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .subtituloHeader{
     flex-grow: 1;
-    color: hsla(291, 54%, 35%, 1);
+    color: #7c298b;
     display: flex;
     align-items: center;
     padding-left: 20px;
-    font-size: 100%;
+    font-size: 120%;
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .headerDiv{
@@ -72,7 +73,9 @@
 .iconLi{
     width: 20px;
     height: 20px;
-    color: #fff
+    color: #fff;
+    position: relative;
+    top: 2px
 }
 
 .headerA span:first-child{

@@ -5,7 +5,6 @@ import { useForm, ValidationError } from '@formspree/react';
 // IMPORT STYLES AND ASSETS
 import '../../styles/main/Contacto.css'
 
-
 const Contacto = (props) => {
 
 const [state, handleSubmit] = useForm("xyyvkanb");
@@ -54,7 +53,7 @@ if (state.succeeded) {
             <button className='formBtn' type="submit" disabled={state.submitting}>Enviar</button>
     </form>
     <p className="emailEnviado">Enviado!</p>
-</div>
+</div>        
     );
 }
 
